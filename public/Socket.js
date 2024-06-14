@@ -13,7 +13,7 @@ let userId = null;
 let currentStageId;
 let currentStageData = stages.data[0];
 let nextStageData = stages.data[1];
-let currentStageItem;
+let currentStageItem = stageItemList.data[0];
 
 socket.on('changeStage', (data) => {
     currentStageId = data.stageId;
