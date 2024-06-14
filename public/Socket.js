@@ -2,7 +2,7 @@ import { CLIENT_VERSION } from './Constants.js';
 import stages from "./assets/stage.json.js";
 import stageItemList from "./assets/item_unlock.json.js";
 
-const socket = io('http://localhost:3000', {
+const socket = io({
     query: {
         clientVersion: CLIENT_VERSION,
     },
